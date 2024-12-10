@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="structures.css" />
+    <title>Instructions | Automated Audio Classifier Recycle Bin</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#">Instructions</a></div>
+      <ul class="nav__links">
+        <li class="link" onclick="location.href='index.html'">Home</li>
+        <li class="link" onclick="location.href='details.html'">Details</li>
+        <li class="link" onclick="location.href='components.html'">Components</li>
+        <li class="link" onclick="location.href='files.html'">Files</li>
+        <li class="link" onclick="location.href='instructions.html'">Instructions</li>
+      </ul>
+    </nav>
+    <header>
+      <div class="section__container">
+        <div class="header__content">
+          <h1><b>Program your Microcontroller</b></h1>
+          <p style="text-align: justify;">
+            On the Edge Impulse "Deployment" tab you can configure your deployment. Choose Arduino library and click build. This will create the Edge Impulse AI model as a .zip file which you should unzip and place the unzipped folder in the Arduino "libraries" folder.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="journey__container">
+      <div class="section__container">
+        <h2 class="section__title">Build the rest of the hardware</h2>
+        <p class="section__subtitle">Print all the remaining .stl parts from the "files" tab and assemble them to the aluminium frame as shown below. Most of the parts such as the trapdoor and rotating base-plate can be mounted using the M5 bolt and M5 T-nut.</p>
+        <div class="journey__grid">
+          <div class="country__card">
+            <img src="images/page3.jpg" alt="country" />
+            <div class="country__name">
+              <span>trapdoor</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="images/page4.jpg" alt="country" />
+            <div class="country__name">
+              <span>rotating base-plate</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="images/page5.jpg" alt="country" />
+            <div class="country__name">
+              <span>trapdoor holder</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="images/wire.png" alt="country" />
+            <div class="country__name">
+              <span style="text-align: justify;">Wire the electronics based on the following diagram. To save space, the wires can be soldered directly to the Arduino Nano 33 BLE Sense.</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="images/wire1.jpg" alt="country" />
+            <div class="country__name">
+              <span style="text-align: justify;">Make sure the hall sensor is mounted close enough to the bottom part of the acrylic base. The magnet should be glued to the bottom side of the acrylic base and should be around 2-4 mm above the hall sensor.</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="images/wire3.jpg" alt="country" />
+            <div class="country__name">
+              <span style="text-align: justify;">Secure any dangling wires by zip-tying it to the aluminium frame.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner__container">
+      <div class="section__container">
+        <div class="banner__content">
+          <h2>Automated Audio Classifier Recycle Bin</h2>
+          <p>
+            Recycle Bin that sorts rubbish based on the sound of collision using Edge AI audio classification.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="display__container">
+      <div class="section__container">
+        <h2 class="section__title"><b>Power it up!</b></h2>
+        <p style="text-align: justify;" class="section__subtitle">
+        </p>
+        <div class="display__grid">
+          <div class="display__card grid-1">
+            <img src="images/project.gif" alt="grid" />
+            <span style="text-align: justify;"></span>
+          </div>
+          <div class="display__card">
+            <h4><b>You can now add stickers (included in the "files" tab) to make the design more intuitive for people to use.</b></h4>
+          </div>
+          <div class="display__card">
+            <img src="images/wire5.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <img src="images/gal4.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <h4><b>Where discarded sounds find a second chance, organized and ready for a new purpose.</b></h4>
+          </div>
+        </div>
+      </div>
+      <button class="back-button" onclick="history.back()">Go Back</button>
+    </section>
+  </body>
+</html>
