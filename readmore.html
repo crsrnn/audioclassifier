@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="stylereadmore.css">
+    <title>Olivia Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Instructions <span></span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="details.html">Details</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="components.html">Components</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="files.html">Files</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="instructions.html">Instructions</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="images/q.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Build the AI model using<span> Edge Impulse</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">If you want to build your own model, you can follow along the steps below: <span class="typewriter-text"></span><label for="">|</label></div>
+                <p style="text-align: justify;" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">For this step you will need to sign up for an https://edgeimpulse.com/ account and then log in. To connect your MCU board to Edge Impulse, you need edge impulse CLI on your computer and then burn the Edge Impulse firmware for Arduino BLE Sense, Here is a more detailed instruction to do so: https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-sense
+
+                    After connected, create a new project and go to the Edge Impulse "Data acquisition" tab and start collecting audio data. Choose Device: Arduino BLE Sense, Sensor: Microphone, Frequency: 16,000Hz, Sample length: 19,000, and most importantly name the label depending on the rubbish object you want to sample.
+                    </p>
+                <div class="social-links">
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button class="back-button" onclick="history.back()">Go Back</button>
+                    <button onclick="location.href='pictures.html'">Pictures</button> 
+                    <button onclick="location.href='structures.html'">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="readmore.js"></script>
+</body>
+</html>

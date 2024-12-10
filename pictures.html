@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures | Automated Audio Classifier Recycle Bin</title>
+    <link rel="stylesheet" href="pictures.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Arduino Project</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a href="instructions.html">Instructions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="main-title">using edge impulse</h1>
+        <div class="grid">
+            <div class="box" id="box1">
+                <img src="images/a.png" alt="Description 1">
+                <p style="text-align: justify;" class="description">You can now start sampling, since each sample length is 19 seconds, you can later split it into 1 second window and adjust it to when the collision happen. Ideally you want about 60 sample of 1 second window for each rubbish objects.
+
+                </p>
+            </div>
+            <div class="box" id="box2">
+                <img src="images/q.png" alt="Description 2">
+                <p style="text-align: justify;" class="description">Next, go to the Impulse design tab, select create impulse and set the parameters to the screenshot below.</p>
+            </div>
+            <div class="box" id="box3">
+                <img src="images/d.png" alt="Description 3">
+                <p style="text-align: justify;" class="description">Autotune parameters and generate features on the MFE tab.</p>
+            </div>
+            <div class="box" id="box4">
+                <img src="images/f.png" alt="Description 4">
+                <p style="text-align: justify;" class="description">Start training on the classifier tab using default parameters (this may take a while)</p>
+            </div>
+            <div class="box" id="box5">
+                <img src="images/g.png" alt="Description 5">
+                <p style="text-align: justify;" class="description">On the Edge Impulse "Deployment" tab you can configure your deployment. Choose Arduino library and click build. This will create the Edge Impulse AI model as a .zip file which you should unzip and place the unzipped folder in the Arduino "libraries" folder.</p>
+            </div>
+            <div class="box" id="box6">
+                <img src="images/w.png" alt="Description 6">
+                <p style="text-align: justify;" class="description">Now you can download the .ino code in this Hackaday project's "files" tab and then upload it to your Arduino.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+<!-- Back Button -->
+<button class="back-button" onclick="history.back()">Go Back</button>
+
+    </footer>
+</body>
+</html>
